@@ -10,7 +10,7 @@ interface TimeLeft {
 export default function CountdownTimer() {
   const calculateTimeLeft = (): TimeLeft => {
     // Target: November 27, 2025, 20:00 São Paulo time (UTC-3)
-    const targetDate = new Date('2025-11-27T20:00:00-03:00').getTime();
+    const targetDate = new Date('2025-11-27T 20:00:00-03:00').getTime();
     const now = new Date().getTime();
     const difference = targetDate - now;
 
